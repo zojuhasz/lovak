@@ -1,0 +1,9 @@
+uuid: a7774dfa-f4d5-48ee-8d40-19bb8cf116dd
+langcode: hu
+status: true
+dependencies: {  }
+name: neme
+vid: neme
+description: 'ló neme'
+hierarchy: 0
+weight: 0

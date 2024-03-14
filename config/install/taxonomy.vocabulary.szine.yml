@@ -1,0 +1,9 @@
+uuid: a25c4d08-f7aa-46b1-9009-f733b492be2a
+langcode: hu
+status: true
+dependencies: {  }
+name: szine
+vid: szine
+description: 'ló színe'
+hierarchy: 0
+weight: 0

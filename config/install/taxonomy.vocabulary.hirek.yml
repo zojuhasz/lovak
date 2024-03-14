@@ -1,0 +1,9 @@
+uuid: 7ff7647d-6994-4168-8252-48b9dfb81b29
+langcode: hu
+status: true
+dependencies: {  }
+name: hírek
+vid: hirek
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,9 @@
+uuid: 01137747-c1e1-4c3f-bea2-45c04509d6f9
+langcode: hu
+status: true
+dependencies: {  }
+name: publikációk
+vid: publikaciok
+description: ''
+hierarchy: 0
+weight: 0

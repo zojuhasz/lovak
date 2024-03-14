@@ -1,0 +1,20 @@
+uuid: eb9ebb93-3141-4f36-852d-750aa35c6e37
+langcode: hu
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: mfXE5ms3p0xOOjNEg8PBgTPZh3Plr12OjwNrOAfpTWo
+name: Lovak
+type: lovak
+description: 'Lovak mezo TESZT'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

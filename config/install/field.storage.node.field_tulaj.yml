@@ -1,0 +1,19 @@
+uuid: c642d19c-183d-4aea-aa2d-b9c7821c6159
+langcode: hu
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_tulaj
+field_name: field_tulaj
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

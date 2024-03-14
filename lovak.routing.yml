@@ -1,0 +1,7 @@
+lovak.default_controller_elokesz:
+  path: '/lovak/elokesz'
+  defaults:
+    _controller: '\Drupal\lovak\Controller\DefaultController::elokesz'
+    _title: 'Elokesz'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,20 @@
+uuid: 53be7888-a3f6-496a-8f98-ad31e05c2c94
+langcode: hu
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_hirek
+field_name: field_hirek
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

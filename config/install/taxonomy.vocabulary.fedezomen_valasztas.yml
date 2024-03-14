@@ -1,0 +1,9 @@
+uuid: 056ca730-079c-4b78-81b9-0eaabb98ae68
+langcode: hu
+status: true
+dependencies: {  }
+name: 'Fedezőmén választás'
+vid: fedezomen_valasztas
+description: 'Fedezőmén választás'
+hierarchy: 0
+weight: 0
