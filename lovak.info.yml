@@ -5,6 +5,6 @@ core_version_requirement: ^8 || ^11
 package: 'Custom'
 
 # Information added by Drupal.org packaging script on 2024-02-07
-version: '10.x-4.3'
+version: '11.x-4.3'
 project: 'lovak'
 datestamp: 1575735787
