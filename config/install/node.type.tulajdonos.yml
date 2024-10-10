@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: tulajdonos_v_tenyeszto
 type: tulajdonos
-description: 'ló tulajdonosa, v. tenyésztője'
+description: 'ló tulajdonosa, v. tenyésztöje'
 help: ''
 new_revision: false
 preview_mode: 1
