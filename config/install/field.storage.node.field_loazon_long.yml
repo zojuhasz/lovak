@@ -4,8 +4,8 @@ status: true
 dependencies:
   module:
     - node
-id: node.field_loazon
-field_name: field_loazon
+id: node.field_loazon_long
+field_name: field_loazon_long
 entity_type: node
 type: string
 settings:
