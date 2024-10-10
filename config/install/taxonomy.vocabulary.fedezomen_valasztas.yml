@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 name: 'Fedezőmén választás'
 vid: fedezomen_valasztas
-description: 'Fedezőmén választás'
+description: 'Fedezömén választás'
 hierarchy: 0
 weight: 0
