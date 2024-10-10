@@ -3,13 +3,13 @@ langcode: hu
 status: true
 dependencies:
   config:
-    - field.storage.node.field_loazon
+    - field.storage.node.field_loazon_long
     - node.type.lovak
-id: node.lovak.field_loazon
+id: node.lovak.field_loazon_long
 field_name: field_loazon
 entity_type: node
 bundle: lovak
-label: loazon
+label: loazon_long
 description: ''
 required: false
 translatable: false
