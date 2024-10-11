@@ -34,6 +34,13 @@ class DefaultController extends ControllerBase {
   'name' => 'Ló szine',
   ]);
   $vocabulary->save();
+
+  $vocabulary = Vocabulary::create([
+  'vid' => 'neme', // Egyedi azonosító a szótárhoz
+  'description' => 'Lo neme',
+  'name' => 'Ló neme',
+  ]);
+  $vocabulary->save();  
     
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'orszag','name' => '?',]); $term->save();
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'orszag','name' => 'AH',]); $term->save();
