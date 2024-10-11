@@ -20,7 +20,21 @@ class DefaultController extends ControllerBase {
    *   Return Hello string.
    */
   public function elokesz() {
+  
+  $vocabulary = Vocabulary::create([
+  'vid' => 'elfogadas', // Egyedi azonosító a szótárhoz
+  'description' => 'ÁSZF elfogadása',
+  'name' => 'Elfogadás',
+  ]);
+  $vocabulary->save();
 
+  $vocabulary = Vocabulary::create([
+  'vid' => 'fedezomen', // Egyedi azonosító a szótárhoz
+  'description' => 'Fedezömén',
+  'name' => 'Fedezömén',
+  ]);
+  $vocabulary->save();
+    
   $vocabulary = Vocabulary::create([
   'vid' => 'orszag', // Egyedi azonosító a szótárhoz
   'description' => 'Orszag',
@@ -41,6 +55,27 @@ class DefaultController extends ControllerBase {
   'name' => 'Ló neme',
   ]);
   $vocabulary->save();  
+
+  $vocabulary = Vocabulary::create([
+  'vid' => 'hirek', // Egyedi azonosító a szótárhoz
+  'description' => 'hírek',
+  'name' => 'hírek',
+  ]);
+  $vocabulary->save();    
+
+  $vocabulary = Vocabulary::create([
+  'vid' => 'lo_vagy_fed', // Egyedi azonosító a szótárhoz
+  'description' => 'ló vagy fedeztetés vagy sikertelen fedezetetés',
+  'name' => 'Ló vagy Fedeztetés',
+  ]);
+  $vocabulary->save();      
+  
+  $vocabulary = Vocabulary::create([
+  'vid' => 'publikaciok', // Egyedi azonosító a szótárhoz
+  'description' => 'Publikációk',
+  'name' => 'Publikációk',
+  ]);
+  $vocabulary->save();        
     
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'orszag','name' => '?',]); $term->save();
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'orszag','name' => 'AH',]); $term->save();
@@ -93,6 +128,30 @@ class DefaultController extends ControllerBase {
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'tarka',]); $term->save();
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'vlp',]); $term->save();
 
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'fedezomen','name' => '?',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'fedezomen','name' => 'IGEN',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'fedezomen','name' => 'NEM',]); $term->save();
+
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'hirek','name' => 'Egyéb hírek',]); $term->save(); 
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'hirek','name' => 'Lovaregylet hírei',]); $term->save(); 
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'hirek','name' => 'Szolgáltatások',]); $term->save(); 
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'hirek','name' => 'Tenyésztés',]); $term->save(); 
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'hirek','name' => 'Versenyzés',]); $term->save(); 
+
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'lo_vagy_fed','name' => '?',]); $term->save(); 
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'lo_vagy_fed','name' => 'FEDEZTETES',]); $term->save();   
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'lo_vagy_fed','name' => 'LO',]); $term->save();   
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'lo_vagy_fed','name' => 'SIKERTELEN FEDEZTETES',]); $term->save();     
+
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'publikaciok','name' => 'egyéb publikációk',]); $term->save();  
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'publikaciok','name' => 'idézetek',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'publikaciok','name' => 'Lovaregylet publikációi',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'publikaciok','name' => 'saját publikációk',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'publikaciok','name' => 'tudományos linkek',]); $term->save();  
+  
+
+    
+    
     
     return [
       '#type' => 'markup',
