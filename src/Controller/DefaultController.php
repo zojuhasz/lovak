@@ -5,6 +5,7 @@ namespace Drupal\lovak\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use \Drupal\node\Entity\Node;
 use Drupal\taxonomy\Entity\Term;
+use Drupal\taxonomy\Entity\Vocabulary;
 
 /**
  * Class DefaultController.
@@ -20,6 +21,20 @@ class DefaultController extends ControllerBase {
    */
   public function elokesz() {
 
+  $vocabulary = Vocabulary::create([
+  'vid' => 'orszag', // Egyedi azonosító a szótárhoz
+  'description' => 'Orszag',
+  'name' => 'Ország',
+  ]);
+  $vocabulary->save();
+
+  $vocabulary = Vocabulary::create([
+  'vid' => 'szine', // Egyedi azonosító a szótárhoz
+  'description' => 'Lo szine',
+  'name' => 'Ló szine',
+  ]);
+  $vocabulary->save();
+    
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'orszag','name' => '?',]); $term->save();
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'orszag','name' => 'AH',]); $term->save();
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'orszag','name' => 'AT',]); $term->save();
@@ -49,7 +64,29 @@ class DefaultController extends ControllerBase {
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'orszag','name' => 'UA',]); $term->save();
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'orszag','name' => 'US',]); $term->save();
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'orszag','name' => 'YU',]); $term->save();
-  
+
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'neme','name' => '?',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'neme','name' => 'h',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'neme','name' => 'k',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'neme','name' => 'm',]); $term->save();
+
+
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => '?',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'f',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'f/sz',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'p',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'p/stp',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'p/vlp',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 's',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'stp',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'stp/f',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'stp/sz',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'sz',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'sz/stp',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'tarka',]); $term->save();
+  $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'vlp',]); $term->save();
+..
+
     
     return [
       '#type' => 'markup',
