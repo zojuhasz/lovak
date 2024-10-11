@@ -92,7 +92,6 @@ class DefaultController extends ControllerBase {
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'sz/stp',]); $term->save();
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'tarka',]); $term->save();
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'szine','name' => 'vlp',]); $term->save();
-..
 
     
     return [
