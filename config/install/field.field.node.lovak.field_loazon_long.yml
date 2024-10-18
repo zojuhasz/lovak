@@ -8,6 +8,9 @@ dependencies:
 id: node.lovak.field_loazon_long
 field_name: field_loazon_long
 entity_type: node
+type: string
+settings:
+  max_length: 255
 bundle: lovak
 label: loazon_long
 description: ''
@@ -16,6 +19,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
-settings:
-  max_length: 60
+
