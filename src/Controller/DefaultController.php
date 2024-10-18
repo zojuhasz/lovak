@@ -21,62 +21,7 @@ class DefaultController extends ControllerBase {
    */
   public function elokesz() {
   
-  $vocabulary = Vocabulary::create([
-  'vid' => 'elfogadas', // Egyedi azonosító a szótárhoz
-  'description' => 'ÁSZF elfogadása',
-  'name' => 'Elfogadás',
-  ]);
-  $vocabulary->save();
-
-  $vocabulary = Vocabulary::create([
-  'vid' => 'fedezomen', // Egyedi azonosító a szótárhoz
-  'description' => 'Fedezömén',
-  'name' => 'Fedezömén',
-  ]);
-  $vocabulary->save();
-    
-  $vocabulary = Vocabulary::create([
-  'vid' => 'orszag', // Egyedi azonosító a szótárhoz
-  'description' => 'Orszag',
-  'name' => 'Ország',
-  ]);
-  $vocabulary->save();
-
-  $vocabulary = Vocabulary::create([
-  'vid' => 'szine', // Egyedi azonosító a szótárhoz
-  'description' => 'Lo szine',
-  'name' => 'Ló szine',
-  ]);
-  $vocabulary->save();
-
-  $vocabulary = Vocabulary::create([
-  'vid' => 'neme', // Egyedi azonosító a szótárhoz
-  'description' => 'Lo neme',
-  'name' => 'Ló neme',
-  ]);
-  $vocabulary->save();  
-
-  $vocabulary = Vocabulary::create([
-  'vid' => 'hirek', // Egyedi azonosító a szótárhoz
-  'description' => 'hírek',
-  'name' => 'hírek',
-  ]);
-  $vocabulary->save();    
-
-  $vocabulary = Vocabulary::create([
-  'vid' => 'lo_vagy_fed', // Egyedi azonosító a szótárhoz
-  'description' => 'ló vagy fedeztetés vagy sikertelen fedezetetés',
-  'name' => 'Ló vagy Fedeztetés',
-  ]);
-  $vocabulary->save();      
   
-  $vocabulary = Vocabulary::create([
-  'vid' => 'publikaciok', // Egyedi azonosító a szótárhoz
-  'description' => 'Publikációk',
-  'name' => 'Publikációk',
-  ]);
-  $vocabulary->save();        
-    
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'orszag','name' => '?',]); $term->save();
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'orszag','name' => 'AH',]); $term->save();
   $term = \Drupal\taxonomy\Entity\Term::create(['vid' => 'orszag','name' => 'AT',]); $term->save();
